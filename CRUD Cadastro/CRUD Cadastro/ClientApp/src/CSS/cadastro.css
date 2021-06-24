@@ -1,0 +1,36 @@
+﻿body {
+    background-color: rgb(41, 41, 41);
+}
+.container-md{
+    margin-top:20px;
+}
+h3 {
+    color: rgb(226, 224, 224);
+    margin: 0 auto;
+    border-bottom: 3px solid;
+    border-color: rgb(226, 224, 224);
+    margin-bottom:5px;
+    font-weight:bold;
+}
+.form-control {
+    width: 100%;
+    margin: 5px;
+}
+#textFields {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#btnSignUp{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+#PeopleList:hover {
+    background-color: dimgray;
+}
+
+p{
+    color:white;
+}

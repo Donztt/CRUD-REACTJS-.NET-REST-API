@@ -1,0 +1,10 @@
+﻿.navbar button {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+.navbar button {
+    margin-left: 40px;
+    margin-right: 40px;
+}
