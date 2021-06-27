@@ -25,3 +25,8 @@
 #remember-me{
     margin-right:5px;
 }
+#errorMessage{
+    padding-top:60px;
+    margin:0 auto;
+    color:red;
+}

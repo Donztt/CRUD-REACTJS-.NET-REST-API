@@ -1,6 +1,6 @@
 ﻿import React, { Component } from "react";
 import Nav from './Nav'
-import '../CSS/cadastro.css';
+import '../CSS/ListaUsuarios.css';
 import Fade from 'react-reveal/Fade';
 
 class ListaUsuarios extends Component {
@@ -32,7 +32,7 @@ class ListaUsuarios extends Component {
             <div>
                 <Fade top>
                     <div id="tableItens">
-                        <table className='table table-dark' aria-labelledby="tabelLabel" >
+                        <table className='table' aria-labelledby="tabelLabel" >
                             <thead>
                                 <tr>
                                     <th>NOME</th>
@@ -68,8 +68,8 @@ class ListaUsuarios extends Component {
         return (
             <div>
                 <Nav />
-                <div className="container-md">
-                    <h3>Usuários cadastrados no sistema</h3>
+                <div className="container-md" id = "UserList">
+                    <h3>Usuários cadastrados</h3>
                     {contents}
                     <p>*Clique sobre o item que deseja alterar ou excluir da lista de usuários!</p>
                 </div>

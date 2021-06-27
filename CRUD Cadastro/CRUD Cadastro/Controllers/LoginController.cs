@@ -107,10 +107,11 @@ namespace CRUD_Cadastro.Controllers
         }
 
         // DELETE: api/Login/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Deletelogin(int id)
+        [HttpDelete("{Pessoaid}")]
+        public async Task<IActionResult> Deletelogin(int Pessoaid)
         {
-            var Login = await _context.Login.FindAsync(id);
+            var Login = await _context.Login.FirstAsync(e => e.Pessoa_id == Pessoaid);
+
             if (Login == null)
             {
                 return NotFound();

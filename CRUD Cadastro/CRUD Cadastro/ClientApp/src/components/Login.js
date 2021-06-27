@@ -31,7 +31,6 @@ class Login extends Component {
 
         const response = await fetch('api/Login/Login/' + this.state.login + ',' + this.state.password);
         const data = await response.json();
-        console.log(data);
 
         if (data.title == "Bad Request") {
             alert("senha ou usuário incorreto");

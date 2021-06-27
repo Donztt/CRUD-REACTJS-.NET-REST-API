@@ -1,5 +1,4 @@
 ﻿import React, { Component } from "react";
-import '../CSS/cadastro.css';
 import '../CSS/AlteracaoDados.css';
 import Nav from './Nav'
 import Zoom from 'react-reveal/Zoom';
@@ -30,15 +29,15 @@ class AlteracaoDados extends Component {
                 <Nav />
                 <div className="container-md">
                     <div>
-                        <h3>Dados do Usuário</h3>
                         <form onSubmit={this.handleEdit}>
                             <div id="textFields">
+                                <h3>Dados do Usuário</h3>
                                 <div className="row align-items-center">
                                     <div className="col">
                                         <input className="form-control" id="NomeCampo" type="hidden" name="id" placeholder="id" defaultValue={this.state.pessoa.id} />
                                         <input className="form-control" id="NomeCampo" type="text" name="nome" placeholder="Nome" defaultValue={this.state.pessoa.nome} required />
-                                        <input className="form-control" id="CPFCampo" type="text" name="cpf" placeholder="CPF" defaultValue={this.state.pessoa.cpf} required />
-                                        <input className="form-control" id="TelCampo" type="text" name="cel" placeholder="Telefone" defaultValue={this.state.pessoa.cel} />
+                                        <input className="form-control" id="CPFCampo" type="text" name="cpf" minlength="11" maxlength="11" placeholder="CPF" defaultValue={this.state.pessoa.cpf} required />
+                                        <input className="form-control" id="TelCampo" type="text" name="cel" minlength="10" maxlength="10" placeholder="Telefone" defaultValue={this.state.pessoa.cel} />
                                     </div>
                                 </div>
                                 <div className="row align-items-center">
@@ -93,9 +92,10 @@ function HandleDeleteItem(id) {
     }
     fetch('api/Pessoa/' + id, { method: 'delete' })
         .then(json => {
+            fetch('api/Login/' + id, { method: 'delete' })
+        })
             window.location.href = "/";
             alert('Usuário deletado com Sucesso!');
-        })
 }
 
 export default AlteracaoDados

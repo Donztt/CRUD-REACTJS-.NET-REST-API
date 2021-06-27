@@ -7,7 +7,7 @@ function Nav() {
     return (
         <div>
             <Fade top>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav className="navbar navbar-expand-lg">
                     <div className="container-fluid">
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="nav mx-auto">
