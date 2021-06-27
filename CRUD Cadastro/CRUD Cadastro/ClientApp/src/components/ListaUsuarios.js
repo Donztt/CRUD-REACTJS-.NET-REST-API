@@ -69,7 +69,7 @@ class ListaUsuarios extends Component {
             <div>
                 <Nav />
                 <div className="container-md">
-                    <h3>Listagem de Pessoas Cadastradas no sistema</h3>
+                    <h3>Usuários cadastrados no sistema</h3>
                     {contents}
                     <p>*Clique sobre o item que deseja alterar ou excluir da lista de usuários!</p>
                 </div>

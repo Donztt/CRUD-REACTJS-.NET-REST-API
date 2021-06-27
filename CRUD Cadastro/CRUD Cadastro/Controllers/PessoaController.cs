@@ -99,6 +99,18 @@ namespace CRUD_Cadastro.Controllers
             return NoContent();
         }
 
+        [HttpPost(template: "Login")]
+        public async Task<IActionResult> Login(string login)
+        {
+            var loginResponse = await _context.Pessoa.FindAsync(login);
+            if (loginResponse == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(login); 
+        }
+
         private bool PessoaExists(int id)
         {
             return _context.Pessoa.Any(e => e.Id == id);

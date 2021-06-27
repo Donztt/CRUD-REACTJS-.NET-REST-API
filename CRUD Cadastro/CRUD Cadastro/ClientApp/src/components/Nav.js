@@ -11,12 +11,9 @@ function Nav() {
                     <div className="container-fluid">
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="nav mx-auto">
-                                <li className="nav-item">
-                                    <Link to="/"><button type="button" className="btn btn-primary">Listagem de Usuários</button></Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link to="/Cadastro"><button type="button" className="btn btn-primary">Cadastre-se</button></Link>
-                                </li>
+                                <Link to="/Login"><li className="nav-item">Login</li></Link>
+                                <Link to="/"><li className="nav-item">Listagem de Usuários</li></Link>
+                                <Link to="/Cadastro"><li className="nav-item">Cadastre-se</li></Link>
                             </ul>
                         </div>
                     </div>

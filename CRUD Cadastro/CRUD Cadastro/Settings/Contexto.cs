@@ -15,5 +15,6 @@ namespace CRUD_Cadastro.Settings
         }
         
         public DbSet<Pessoa> Pessoa { get; set; }
+        public DbSet<Login> Login { get; set; }
     }
 }
