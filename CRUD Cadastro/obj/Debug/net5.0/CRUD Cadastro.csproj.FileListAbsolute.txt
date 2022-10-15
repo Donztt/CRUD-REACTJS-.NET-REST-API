@@ -1,0 +1,5 @@
+C:\Users\Donztt\Documents\GitHub\CRUD-REACTJS-.NET-REST-API\CRUD Cadastro\obj\Debug\net5.0\CRUD Cadastro.csproj.AssemblyReference.cache
+C:\Users\Donztt\Documents\GitHub\CRUD-REACTJS-.NET-REST-API\CRUD Cadastro\obj\Debug\net5.0\CRUD Cadastro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Donztt\Documents\GitHub\CRUD-REACTJS-.NET-REST-API\CRUD Cadastro\obj\Debug\net5.0\CRUD Cadastro.AssemblyInfoInputs.cache
+C:\Users\Donztt\Documents\GitHub\CRUD-REACTJS-.NET-REST-API\CRUD Cadastro\obj\Debug\net5.0\CRUD Cadastro.AssemblyInfo.cs
+C:\Users\Donztt\Documents\GitHub\CRUD-REACTJS-.NET-REST-API\CRUD Cadastro\obj\Debug\net5.0\CRUD Cadastro.csproj.CoreCompileInputs.cache
